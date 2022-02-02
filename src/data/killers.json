@@ -1,0 +1,337 @@
+[
+    {
+        "killer": "Pinhead",
+        "perks": [
+            "STBFL",
+            "Corrupt",
+            "Ruin",
+            "BBQ"
+        ]
+    },
+    {
+        "killer": "Trapper",
+        "perks": [
+            "NOED",
+            "Ruin",
+            "Lightborn",
+            "Thanatophobia"
+        ]
+    },
+    {
+        "killer": "Ghostface",
+        "perks": [
+            "Jolt",
+            "Nurses",
+            "Corrupt",
+            "Ruin"
+        ]
+    },
+    {
+        "killer": "Oni",
+        "perks": [
+            "Tinkerer",
+            "Pain Resonance",
+            "Infectious",
+            "BBQ"
+        ]
+    },
+    {
+        "killer": "Pig",
+        "perks": [
+            "Surveilance",
+            "Make Your Choice",
+            "Overcharge",
+            "BBQ"
+        ]
+    },
+    {
+        "killer": "Doctor",
+        "perks": [
+            "STBFL",
+            "Thanatophobia",
+            "Distressing",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Nemesis",
+        "perks": [
+            "Ruin",
+            "Thanatophobia",
+            "NOED",
+            "Pop"
+        ]
+    },
+    {
+        "killer": "Ghostface",
+        "perks": [
+            "Pop",
+            "Ruin",
+            "Corrupt",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Trickster",
+        "perks": [
+            "Starstruck",
+            "NOED",
+            "Corrupt",
+            "No Way Out"
+        ]
+    },
+    {
+        "killer": "Pig",
+        "perks": [
+            "Haunted Ground",
+            "Thanatophobia",
+            "Make Your Choice",
+            "Thrilling Tremors"
+        ]
+    },
+    {
+        "killer": "Blight",
+        "perks": [
+            "Dragons Grip",
+            "Blood Favor",
+            "Undying",
+            "Fearmonger"
+        ]
+    },
+    {
+        "killer": "Wraith",
+        "perks": [
+            "Lethal Pursuer",
+            "Pentimento",
+            "Lightborn",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Nemesis",
+        "perks": [
+            "Lethal Pursuer",
+            "Discordance",
+            "Nurses",
+            "Sloppy Butcher"
+        ]
+    },
+    {
+        "killer": "Huntress",
+        "perks": [
+            "Pain Resonance",
+            "Pop",
+            "Iron Maiden",
+            "Thanatophobia"
+        ]
+    },
+    {
+        "killer": "Nemesis",
+        "perks": [
+            "Lethal Pursuer",
+            "Plaything",
+            "Jolt",
+            "BBQ"
+        ]
+    },
+    {
+        "killer": "Doctor",
+        "perks": [
+            "BBQ",
+            "Overcharge",
+            "Thanatophobia",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Bubba",
+        "perks": [
+            "BBQ",
+            "Ruin",
+            "Pop",
+            "No Way Out"
+        ]
+    },
+    {
+        "killer": "Trickster",
+        "perks": [
+            "Bamboozle",
+            "Lightborn",
+            "BBQ",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Bubba",
+        "perks": [
+            "BBQ",
+            "Bamboozle",
+            "Pop",
+            "Tinkerer"
+        ]
+    },
+    {
+        "killer": "Oni",
+        "perks": [
+            "Nemesis"
+        ]
+    },
+    {
+        "killer": "Billy",
+        "perks": [
+            "Tinkerer",
+            "Dead Mans Switch",
+            "Pop",
+            "Bamboozle"
+        ]
+    },
+    {
+        "killer": "Deathslinger",
+        "perks": [
+            "BBQ",
+            "Monitor & Abuse",
+            "Pop",
+            "Nurses"
+        ]
+    },
+    {
+        "killer": "Huntress",
+        "perks": [
+            "Lullaby",
+            "Distressing",
+            "Jolt",
+            "Lethal Pursuer"
+        ]
+    },
+    {
+        "killer": "Pyramid Head",
+        "perks": [
+            "Corrupt",
+            "Jolt",
+            "Trail Of Torment",
+            "Pop"
+        ]
+    },
+    {
+        "killer": "Huntress",
+        "perks": [
+            "BBQ",
+            "Pop",
+            "Iron Maiden",
+            "Shadowborn"
+        ]
+    },
+    {
+        "killer": "Pyramid Head",
+        "perks": [
+            "Pop",
+            "BBQ",
+            "I'm All Ears",
+            "Infectious"
+        ]
+    },
+    {
+        "killer": "Nurse",
+        "perks": [
+            "Monitor & Abuse",
+            "Thanatophobia",
+            "Ruin",
+            "Surveilance"
+        ]
+    },
+    {
+        "killer": "Twins",
+        "perks": [
+            "Coup De Grâce",
+            "Oppresion"
+        ]
+    },
+    {
+        "killer": "Huntress",
+        "perks": [
+            "BBQ",
+            "Corrupt",
+            "Shadowborn",
+            "Iron Maiden"
+        ]
+    },
+    {
+        "killer": "Clown",
+        "perks": [
+            "Pop",
+            "NOED",
+            "Thanatophobia",
+            "Bamboozle"
+        ]
+    },
+    {
+        "killer": "Pig",
+        "perks": [
+            "Hangmans Trick",
+            "Corrupt"
+        ]
+    },
+    {
+        "killer": "Michael",
+        "perks": [
+            "Brutal Strength",
+            "NOED",
+            "BBQ",
+            "STBFL"
+        ]
+    },
+    {
+        "killer": "Bubba",
+        "perks": [
+            "Crowd Control",
+            "Tinkerer",
+            "Enduring",
+            "Lightborn"
+        ]
+    },
+    {
+        "killer": "Spirit",
+        "perks": [
+            "Crowd Control",
+            "Iron Grasp",
+            "Spirit Fury",
+            "Rancor"
+        ]
+    },
+    {
+        "killer": "Oni",
+        "perks": [
+            "Monitor & Abuse",
+            "Infectious",
+            "BBQ",
+            "No Way Out"
+        ]
+    },
+    {
+        "killer": "Huntress",
+        "perks": [
+            "Pop",
+            "Iron Grasp",
+            "Discordance",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Billy",
+        "perks": [
+            "Tinkerer",
+            "Pop",
+            "BBQ",
+            "NOED"
+        ]
+    },
+    {
+        "killer": "Pinhead",
+        "perks": [
+            "Plaything",
+            "Ruin",
+            "Pop",
+            "BBQ"
+        ]
+    }
+]
