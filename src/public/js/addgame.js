@@ -1,5 +1,5 @@
 function setPerks() {
-    fetch("http://localhost:3000/api/v1/perks", {
+    fetch("http://104.223.80.170:3000/api/v1/perks", {
         method: "GET",
         redirect: "follow",
     })
@@ -63,7 +63,7 @@ function addgame() {
         redirect: "follow",
     };
 
-    fetch("http://localhost:3000/api/v1/killer", requestOptions)
+    fetch("http://104.223.80.170:3000/api/v1/killer", requestOptions)
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));

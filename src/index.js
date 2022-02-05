@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const api = require("./api/index");
+const config = require("../config.json");
 
 require("./db/index");
 
@@ -15,4 +16,4 @@ app.get("/cperks", (req, res) => res.sendFile(path.join(__dirname, "public/commo
 
 const port = process.env.PORT || 3000;
 app.listen(port);
-console.log(`Listening in: http://localhost:${port}`);
+console.log(`Listening in: http://${config.IP}:${port}`);

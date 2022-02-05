@@ -1,5 +1,5 @@
 function setStats() {
-    fetch("http://localhost:3000/api/v1/killers", {
+    fetch("http://104.223.80.170:3000/api/v1/killers", {
         method: "GET",
         redirect: "follow",
     })

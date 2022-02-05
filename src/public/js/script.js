@@ -7,7 +7,7 @@ function mode(arr) {
 let games = 0;
 
 function setStats() {
-    fetch("http://localhost:3000/api/v1/killers", {
+    fetch("http://104.223.80.170:3000/api/v1/killers", {
         method: "GET",
         redirect: "follow",
     })
@@ -80,7 +80,7 @@ function setStats() {
 let size = 0;
 
 function setSize() {
-    fetch("http://localhost:3000/api/v1/size", {
+    fetch("http://104.223.80.170:3000/api/v1/size", {
         method: "GET",
         redirect: "follow",
     })
