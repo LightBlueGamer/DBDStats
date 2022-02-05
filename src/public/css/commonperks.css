@@ -1,7 +1,7 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: 100%;
 }
 
 td,
@@ -11,18 +11,18 @@ th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #dddddd;
 }
 
-.zero {
-    width: 5%;
+th {
+    width: 500%;
 }
 
 .first {
-    width: 47.5%;
+    width: 50%;
 }
 
 .second {
-    width: 47.5%;
+    width: 50%;
 }

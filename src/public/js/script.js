@@ -4,6 +4,8 @@ function mode(arr) {
         .pop();
 }
 
+let games = 0;
+
 function setStats() {
     fetch("http://localhost:3000/api/v1/killers", {
         method: "GET",
@@ -15,6 +17,8 @@ function setStats() {
             const cPerks = [];
 
             const stats = JSON.parse(result);
+
+            games = stats.length;
 
             stats.forEach((stat) => {
                 killers.push(stat.killer);
@@ -43,8 +47,13 @@ function setStats() {
             });
 
             const body = document.getElementById("stats");
-            stats.forEach((stat) => {
+            console.log(stats);
+            for (let i = 0; i < stats.length; i++) {
+                const stat = stats[i];
                 const row = document.createElement("tr");
+                const game = document.createElement("td");
+                game.innerHTML = i + 1;
+                row.appendChild(game);
                 const killer = document.createElement("td");
                 killer.innerHTML = stat.killer;
                 row.appendChild(killer);
@@ -55,7 +64,7 @@ function setStats() {
                     row.appendChild(perk);
                 });
                 body.appendChild(row);
-            });
+            }
 
             const killer = mode(killers);
             const perk = mode(cPerks);
@@ -77,13 +86,15 @@ function setSize() {
     })
         .then((response) => response.text())
         .then((result) => {
-            document.getElementById("size").innerHTML = `Data size: ${result}kb`;
+            document.getElementById(
+                "size"
+            ).innerHTML = `Collected data: ${result}kb/${games} games`;
         })
         .catch((error) => console.log("error", error));
 }
 
 function showInfo() {
-    window.alert(`Data size: ${size}kb`);
+    window.alert(`Size of collected data: ${size}kb`);
 }
 
 setStats();

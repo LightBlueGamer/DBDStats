@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -6,13 +10,22 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid gray;
     text-align: left;
     padding: 8px;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #400a06;
+}
+
+.T {
+    background-color: #400a06;
+}
+
+tr:nth-child(odd) {
+    background-color: #ab4a00;
 }
 
 .footer {

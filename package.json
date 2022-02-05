@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@joshdb/core": "^1.2.7",
+    "@joshdb/sqlite": "^1.1.9",
+    "discord.js": "^13.6.0",
+    "dotenv": "^15.0.1",
     "express": "^4.17.2"
   }
 }
