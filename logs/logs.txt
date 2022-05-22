@@ -322,3 +322,54 @@ Light added:
 Light added:
 {"killer":"Demogorgon","perks":["Corrupt","Tinkerer","Ruin","BBQ"],"region":"EU"}
 
+Light added:
+{"killer":"Trickster","perks":["Devour Hope","Starstruck","Spies","No Way Out"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["NOED","Pain Resonance","Corrupt","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Blight","perks":["BBQ","Pain Resonance","Ruin","NOED"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Ruin","Lethal Pursuer","Discordance","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Oni","perks":["Ruin","NOED","Nemesis","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Oni","perks":["Ruin","Discordance","Nemesis","NOED"],"region":"EU"}
+
+Light added:
+{"killer":"Legion","perks":["Pop","Enduring","Spirit Fury","Jolt"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["Pain Resonance","Lethal Pursuer","Brutal Strength","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Sloppy Butcher","Eruption","Unrelenting","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Artist","perks":["NOED","Lethal Pursuer","Franklins","Discordance"],"region":"EU"}
+
+Light added:
+{"killer":"Michael","perks":["Nemesis","No Way Out","Remember Me","Rancor"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Lethal Pursuer","Empty","Empty","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["Corrupt","Pop","Ruin","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Clown","perks":["Franklins","Pain Resonance","Nurses","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Michael","perks":["Spies","Territorial Imperative","Deerstalker","Monstrous Shrine"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["Retribution","Ruin","Haunted Ground","Undying"],"region":"EU"}
+
+Light added:
+{"killer":"Trapper","perks":["Ruin","Tinkerer","Undying","Lightborn"],"region":"EU"}
+
