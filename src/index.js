@@ -14,6 +14,8 @@ app.get("/rawstats", (req, res) => res.sendFile(path.join(__dirname, "public/raw
 app.get("/addgame", (req, res) => res.sendFile(path.join(__dirname, "public/addgame.html")));
 app.get("/cperks", (req, res) => res.sendFile(path.join(__dirname, "public/commonperks.html")));
 
+require("dotenv").config();
+
 const port = process.env.PORT || 3000;
 app.listen(port);
 console.log(`Listening in: http://${config.IP}:${port}`);

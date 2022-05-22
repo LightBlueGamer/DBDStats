@@ -7,7 +7,7 @@ function mode(arr) {
 let games = 0;
 
 function setStats() {
-    fetch("http://104.223.80.170:3000/api/v1/killers", {
+    fetch("http://135.125.188.15:3000/api/v1/killers", {
         method: "GET",
         redirect: "follow",
     })
@@ -63,6 +63,9 @@ function setStats() {
                     perk.innerHTML = perkName;
                     row.appendChild(perk);
                 });
+                const region = document.createElement("td");
+                region.innerHTML = stat.region;
+                row.appendChild(region);
                 body.appendChild(row);
             }
 
@@ -80,7 +83,7 @@ function setStats() {
 let size = 0;
 
 function setSize() {
-    fetch("http://104.223.80.170:3000/api/v1/size", {
+    fetch("http://135.125.188.15:3000/api/v1/size", {
         method: "GET",
         redirect: "follow",
     })

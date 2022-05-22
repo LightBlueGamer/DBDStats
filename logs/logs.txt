@@ -1,0 +1,324 @@
+Light added:
+{"killer":"Pyramid Head","perks":["BBQ","Pop","Trail Of Torment","Oppression"]}
+
+Light added:
+{"killer":"Nurse","perks":["Corrupt","Ruin","Thanatophobia","Nurses"]}
+
+Light added:
+{"killer":"Oni","perks":["Nemesis","Blood Echo","Zenshin Tactics","Empty"]}
+
+Light added:
+{"killer":"Deathslinger","perks":["Ruin","STBFL","Dying Light","Dead Mans Switch"]}
+
+Light added:
+{"killer":"Trapper","perks":["Agitation","Iron Grasp","Monstrous Shrine","NOED"]}
+
+Light added:
+{"killer":"Pig","perks":["Jolt","Discordance","Surveilance","Hangmans Trick"]}
+
+Light added:
+{"killer":"Nemesis","perks":["Jolt","BBQ","Franklins","Pop"]}
+
+Light added:
+{"killer":"Blight","perks":["Blood Favor","Undying","Sloppy Butcher","BBQ"]}
+
+Light added:
+{"killer":"Doctor","perks":["Pop","Jolt","Discordance","BBQ"]}
+
+Serg added:
+{"killer":"Pinhead","perks":["Thrilling Tremors","Corrupt","Nurses","Fearmonger"]}
+
+Light added:
+{"killer":"Legion","perks":["Jolt","Sloppy Butcher","Trail Of Torment","Unrelenting"]}
+
+Light added:
+{"killer":"Huntress","perks":["Ruin","Iron Maiden","Bitter Murmur","BBQ"]}
+
+Light added:
+{"killer":"Pig","perks":["Fearmonger","Thanatophobia","NOED","Lethal Pursuer"]}
+
+Light added:
+{"killer":"Spirit","perks":["Haunted Ground","Corrupt","Rancor","Franklins"]}
+
+Light added:
+{"killer":"Pinhead","perks":["Deadlock","Grim Embrace","Plaything","Knock Out"]}
+
+Light added:
+{"killer":"Nemesis","perks":["BBQ","STBFL","Tinkerer","Pop"]}
+
+Light added:
+{"killer":"Wraith","perks":["Whispers","Lightborn","Bloodhound","Iron Grasp"]}
+
+Light added:
+{"killer":"Oni","perks":["Ruin","Undying","Pop","BBQ"]}
+
+Light added:
+{"killer":"Huntress","perks":["STBFL","Devour Hope","BBQ","Nurses"]}
+
+Light added:
+{"killer":"Blight","perks":["Dragons Grip","Corrupt","Blood Favor","Empty"]}
+
+Light added:
+{"killer":"Pyramid Head","perks":["Ruin","NOED","Infectious","Jolt"]}
+
+Light added:
+{"killer":"Blight","perks":["Fearmonger","Ruin","Undying","BBQ"]}
+
+Light added:
+{"killer":"Blight","perks":["Blood Favor","STBFL","Undying","Jolt"]}
+
+Light added:
+{"killer":"Michael","perks":["Play With Your Food","Jolt","Bitter Murmur","Thrill Of The Hunt"]}
+
+Light added:
+{"killer":"Doctor","perks":["Ruin","Fearmonger","Monitor & Abuse","BBQ"]}
+
+Light added:
+{"killer":"Huntress","perks":["Pain Resonance","Pop","Iron Maiden","BBQ"]}
+
+Light added:
+{"killer":"Michael","perks":["Dead Mans Switch","Corrupt","Pain Resonance","Jolt"]}
+
+Light added:
+{"killer":"Oni","perks":["BBQ","STBFL","Tinkerer","Pop"]}
+
+Light added:
+{"killer":"Pyramid Head","perks":["NOED","I'm All Ears","BBQ","Pop"]}
+
+Light added:
+{"killer":"Ghostface","perks":["NOED","I'm All Ears","Jolt","Unrelenting"]}
+
+Light added:
+{"killer":"Bubba","perks":["Corrupt","Bamboozle","Hangmans Trick","Pop"]}
+
+Light added:
+{"killer":"Deathslinger","perks":["Corrupt","Dead Mans Switch","Jolt","BBQ"]}
+
+Light added:
+{"killer":"Pinhead","perks":["Pop","Plaything","Deadlock","Bitter Murmur"]}
+
+Light added:
+{"killer":"Blight","perks":["Tinkerer","Plaything","Shadowborn","BBQ"]}
+
+Light added:
+{"killer":"Trapper","perks":["Franklins","Ruin","Nurses","Corrupt"]}
+
+Light added:
+{"killer":"Deathslinger","perks":["Pain Resonance","Ruin","Dead Mans Switch","Corrupt"]}
+
+Light added:
+{"killer":"Trickster","perks":["Pop","No Way Out","NOED","Tinkerer"]}
+
+Light added:
+{"killer":"Doctor","perks":["Corrupt","Brutal Strength","No Way Out","NOED"]}
+
+Light added:
+{"killer":"Pyramid Head","perks":["Ruin","BBQ","Pop","Tinkerer"]}
+
+Light added:
+{"killer":"Demogorgon","perks":["Ruin","BBQ","Pop","STBFL"]}
+
+Light added:
+{"killer":"Artist","perks":["Ruin","Pain Resonance","Pop","NOED"]}
+
+Light added:
+{"killer":"Pinhead","perks":["BBQ","Sloppy Butcher","Pop","Jolt"]}
+
+Light added:
+{"killer":"Michael","perks":["Pop","Devour Hope","Nurses","Tinkerer"]}
+
+Light added:
+{"killer":"Nemesis","perks":["Ruin","Tinkerer","Pain Resonance","BBQ"]}
+
+Light added:
+{"killer":"Artist","perks":["Pentimento","Pain Resonance","Thrilling Tremors","Whispers"]}
+
+Light added:
+{"killer":"Pig","perks":["Fearmonger","Iron Grasp","Franklins","Ruin"]}
+
+Light added:
+{"killer":"Spirit","perks":["NOED","Ruin","Rancor","Franklins"]}
+
+Light added:
+{"killer":"Nemesis","perks":["Spirit Fury","Lethal Pursuer","Ruin","BBQ"]}
+
+Light added:
+{"killer":"Spirit","perks":["Ruin","Haunted Ground","Stridor","Discordance"]}
+
+Light added:
+{"killer":"Deathslinger","perks":["Gearhead","Bitter Murmur","Empty","Empty"]}
+
+Light added:
+{"killer":"Artist","perks":["Pain Resonance","Pentimento","Grim Embrace","Jolt"]}
+
+Light added:
+{"killer":"Artist","perks":["Blood Favor","Ruin","Fearmonger","Plaything"]}
+
+Light added:
+{"killer":"Trapper","perks":["Blood Favor","Ruin","Fearmonger","Plaything"]}
+
+Light added:
+{"killer":"Nemesis","perks":["BBQ","Dead Mans Switch","Pain Resonance","STBFL"]}
+
+Light added:
+{"killer":"Blight","perks":["Tinkerer","Pop","Ruin","Undying"]}
+
+Light added:
+{"killer":"Nurse","perks":["NOED","Pain Resonance","Infectious","Discordance"]}
+
+Light added:
+{"killer":"Huntress","perks":["Infectious","BBQ","Corrupt","Iron Maiden"]}
+
+Light added:
+{"killer":"Billy","perks":["Pop","Tinkerer","Corrupt","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Bubba","perks":["Fearmonger","Claustrophobia","Jolt","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Trickster","perks":["Corrupt","Undying","Ruin","No Way Out"],"region":"EU"}
+
+Light added:
+{"killer":"Doctor","perks":["Distressing","Unnverving Presence","Overcharge","Lullaby"],"region":"EU"}
+
+Light added:
+{"killer":"Legion","perks":["Discordance","Overcharge","Empty","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Huntress","perks":["NOED","Starstruck","No Way Out","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Legion","perks":["Dragons Grip","Tinkerer","Blood Favor","Pop"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["Shadowborn","Empty","Empty","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["Thanatophobia","Nurses","Infectious","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["NOED","Starstruck","Pop","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Doctor","perks":["Ruin","Jolt","Brutal Strength","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["NOED","Jolt","Sloppy Butcher","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Bubba","perks":["Iron Grasp","Ruin","Corrupt","Insidious"],"region":"EU"}
+
+Light added:
+{"killer":"Bubba","perks":["BBQ","Corrupt","Franklins","Jolt"],"region":"EU"}
+
+Light added:
+{"killer":"Doctor","perks":["Iron Grasp","Sloppy Butcher","Unrelenting","Jolt"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Hysteria","Ruin","Eruption","Infectious"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["Fearmonger","Whispers","Lethal Pursuer","No Way Out"],"region":"EU"}
+
+Light added:
+{"killer":"Blight","perks":["Ruin","Undying","Tinkerer","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["BBQ","NOED","Pop","I'm All Ears"],"region":"EU"}
+
+Light added:
+{"killer":"Oni","perks":["Fearmonger","Dead Mans Switch","Pain Resonance","Thanatophobia"],"region":"EU"}
+
+Light added:
+{"killer":"Oni","perks":["Fearmonger","Dead Mans Switch","Pain Resonance","Thanatophobia"],"region":"EU"}
+
+Light added:
+{"killer":"Pig","perks":["Hangmans Trick","Empty","Empty","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["Sloppy Butcher","Spies","Deathbound","BBQ"],"region":"EU"}
+
+Light added:
+{"killer":"Pig","perks":["BBQ","NOED","Jolt","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["NOED","Bamboozle","Nurses","Jolt"],"region":"EU"}
+
+Light added:
+{"killer":"Billy","perks":["Tinkerer","BBQ","Ruin","Pentimento"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Corrupt","Lethal Pursuer","Pop","Ruin"],"region":"EU"}
+
+Light added:
+{"killer":"Pig","perks":["STBFL","Corrupt","Pain Resonance","Third Seal"],"region":"EU"}
+
+Light added:
+{"killer":"Ghostface","perks":["I'm All Ears","Whispers","Insidious","Monstrous Shrine"],"region":"EU"}
+
+Light added:
+{"killer":"Clown","perks":["Sloppy Butcher","Pop","NOED","Corrupt"],"region":"EU"}
+
+Light added:
+{"killer":"Pinhead","perks":["Ruin","Plaything","Gift Of Pain","Empty"],"region":"EU"}
+
+Light added:
+{"killer":"Michael","perks":["STBFL","Play With Your Food","Pop","Brutal Strength"],"region":"EU"}
+
+Light added:
+{"killer":"Nurse","perks":["Spies","Starstruck","Undying","Haunted Ground"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["NOED","Devour Hope","Sloppy Butcher","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Trickster","perks":["Pop","Discordance","Corrupt","No Way Out"],"region":"EU"}
+
+Light added:
+{"killer":"Plague","perks":["Corrupt","Infectious","Eruption","Surveilance"],"region":"EU"}
+
+Light added:
+{"killer":"Deathslinger","perks":["Corrupt","Monitor & Abuse","Discordance","Thanatophobia"],"region":"EU"}
+
+Light added:
+{"killer":"Trickster","perks":["NOED","Ruin","Starstruck","Pop"],"region":"EU"}
+
+Light added:
+{"killer":"Bubba","perks":["BBQ","Corrupt","Pop","NOED"],"region":"EU"}
+
+Light added:
+{"killer":"Pinhead","perks":["BBQ","Plaything","Deadlock","Dying Light"],"region":"EU"}
+
+Light added:
+{"killer":"Wraith","perks":["BBQ","Make Your Choice","Spirit Fury","NOED"],"region":"EU"}
+
+Light added:
+{"killer":"Pig","perks":["Spies","Make Your Choice","Surveilance","Bitter Murmur"],"region":"EU"}
+
+Light added:
+{"killer":"Legion","perks":["Jolt","Enduring","BBQ","Spirit Fury"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Pain Resonance","Agitation","Lethal Pursuer","STBFL"],"region":"EU"}
+
+Light added:
+{"killer":"Nemesis","perks":["Pain Resonance","Agitation","Lethal Pursuer","STBFL"],"region":"EU"}
+
+Light added:
+{"killer":"Blight","perks":["Pain Resonance","Dead Mans Switch","BBQ","Nurses"],"region":"EU"}
+
+Light added:
+{"killer":"Huntress","perks":["Corrupt","Ruin","Undying","NOED"],"region":"EU"}
+
+Light added:
+{"killer":"Deathslinger","perks":["Lethal Pursuer","Dead Mans Switch","Pop","Monitor & Abuse"],"region":"EU"}
+
+Light added:
+{"killer":"Plague","perks":["Ruin","Corrupt","Infectious","Thanatophobia"],"region":"EU"}
+
+Light added:
+{"killer":"Bubba","perks":["Bitter Murmur","BBQ","Franklins","Corrupt"],"region":"EU"}
+
+Light added:
+{"killer":"Demogorgon","perks":["Corrupt","Tinkerer","Ruin","BBQ"],"region":"EU"}
+

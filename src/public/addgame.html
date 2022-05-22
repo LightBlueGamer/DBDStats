@@ -36,6 +36,7 @@
         <option value="Nemesis">Nemesis</option>
         <option value="Pinhead">Pinhead</option>
         <option value="Artist">Artist</option>
+        <option value="Onryo">Onryo</option>
     </select><br><br>
     <label for="perk1">Perk 1:</label>
     <select id="perk1" name="perk1"></select><br><br>
@@ -45,8 +46,26 @@
     <select id="perk3" name="perk3"></select><br><br>
     <label for="perk4">Perk 4:</label>
     <select id="perk4" name="perk4"></select><br><br>
+    <label for="region">Region:</label>
+    <select id="region" name="region">
+        <option value="EU">Eu</option>
+        <option value="NAW">NaW</option>
+        <option value="NAE">NaE</option>
+        <option value="OCE">Oce</option>
+        <option value="ASIA">Asia</option>
+    </select><br><br>
 
     <input type="text" id="password" value="Personal Code">
-    <button id="addgame" onclick="addgame()">Add Game</button>
+    <button id="addgame" onclick="addgame()">Add Game</button><br>
+    <input type="number" id="pos" value="1">
+    <button id="changeStat" onclick="changestat()">Change Killer Stats</button><br>
+    <p>Reminder: Do not input your own killer games!</p>
+    <br>
+
+    <div class="footer" id="navButtons">
+        <button onclick="location.href='http://135.125.188.15:3000/rawstats'" type="button">Raw Statistics</button>
+        <button onclick="location.href='http://135.125.188.15:3000/cperks'" type="button">Common Killer Perks</button>
+        <button onclick="location.href='http://135.125.188.15:3000'" type="button">Main Page</button>
+    </div>
 </body>
 </html>

@@ -10,8 +10,8 @@ table {
 
 td,
 th {
-    border: 1px solid gray;
-    text-align: left;
+    border: 1px solid darkred;
+    text-align: center;
     padding: 8px;
     color: white;
 }
@@ -22,6 +22,10 @@ tr:nth-child(even) {
 
 .T {
     background-color: #400a06;
+}
+
+.R {
+    width: 10%;
 }
 
 tr:nth-child(odd) {

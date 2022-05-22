@@ -20,15 +20,21 @@
     </table><br>
     <table>
         <tr>
-            <th class="T">#</th>
+            <th class="T R">#</th>
             <th class="T">Killer</th>
             <th class="T">Perk 1</th>
             <th class="T">Perk 2</th>
             <th class="T">Perk 3</th>
             <th class="T">Perk 4</th>
+            <th class="T R">Region</th>
         </tr>
         <tbody id="stats"></tbody>
     </table>
-    <button id="size" class="footer">Show Site Information</button>
+    <div class="footer" id="navButtons">
+        <button id="size">Show Site Information</button>
+        <button onclick="location.href='http://135.125.188.15:3000/rawstats'" type="button">Raw Statistics</button>
+        <button onclick="location.href='http://135.125.188.15:3000/cperks'" type="button">Common Killer Perks</button>
+        <button onclick="location.href='http://135.125.188.15:3000/addgame'" type="button">Add Stats</button>
+    </div>
 </body>
 </html>

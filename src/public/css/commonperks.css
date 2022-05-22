@@ -26,3 +26,9 @@ th {
 .second {
     width: 50%;
 }
+
+.footer {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1%;
+}

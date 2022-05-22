@@ -26,3 +26,9 @@ tr:nth-child(even) {
 .second {
     width: 47.5%;
 }
+
+.footer {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1%;
+}

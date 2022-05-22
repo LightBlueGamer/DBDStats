@@ -7,8 +7,18 @@ const db = new Josh({
     provider,
 });
 
-//(async () => {
-//    db.set("killers", killers);
-//})();
+// (async () => {
+//     db.set("killers", killers);
+// })();
+
+// (async () => {
+//     const stats = await db.get("killers");
+
+//     for (let i = 0; i < stats.length; i++) {
+//         const obj = stats[i];
+//         obj.region = "Eu";
+//         await db.set(`killers.${i}`, obj);
+//     }
+// })();
 
 module.exports = db;
