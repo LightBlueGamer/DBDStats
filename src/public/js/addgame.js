@@ -1,5 +1,5 @@
 function setPerks() {
-    fetch("http://135.125.188.15:3000/api/v1/perks", {
+    fetch("/api/v1/perks", {
         method: "GET",
         redirect: "follow",
     })
@@ -65,7 +65,7 @@ function addgame() {
         redirect: "follow",
     };
 
-    fetch("http://135.125.188.15:3000/api/v1/killer", requestOptions)
+    fetch("/api/v1/killer", requestOptions)
         .then((response) => {
             if (response.status != 200) return window.alert("Error, your code might be wrong!");
             else return response.text();
@@ -102,7 +102,7 @@ function changestat() {
         redirect: "follow",
     };
 
-    fetch("http://135.125.188.15:3000/api/v1/ukiller", requestOptions)
+    fetch("/api/v1/ukiller", requestOptions)
         .then((response) => {
             if (response.status != 200) {
                 console.log(response);

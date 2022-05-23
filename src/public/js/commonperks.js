@@ -1,5 +1,5 @@
 function setPerks() {
-    fetch("http://135.125.188.15:3000/api/v1/killers", {
+    fetch("/api/v1/killers", {
         method: "GET",
         redirect: "follow",
     })
