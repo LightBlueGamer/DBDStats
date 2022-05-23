@@ -64,7 +64,7 @@ function setStats() {
                     row.appendChild(perk);
                 });
                 const region = document.createElement("td");
-                region.innerHTML = stat.region;
+                region.innerHTML = stat.region.toUpperCase();
                 row.appendChild(region);
                 body.appendChild(row);
             }
