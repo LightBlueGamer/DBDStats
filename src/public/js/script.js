@@ -89,10 +89,6 @@ function setSize() {
     })
         .then((response) => response.text())
         .then((result) => {
-            const playedGames = document.getElementById("stats").childElementCount;
-            const description = (document.getElementById(
-                "description"
-            ).innerHTML = `Dead by Daylight Statistics ${playedGames} games recorded!`);
             document.getElementById(
                 "size"
             ).innerHTML = `Collected data: ${result}kb/${playedGames} games`;

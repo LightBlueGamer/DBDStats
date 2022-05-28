@@ -3,13 +3,23 @@ const app = express();
 const path = require("path");
 const api = require("./api/index");
 const config = require("../config.json");
+const fs = require("fs");
+const db = require("./db/index");
 
 require("./db/index");
 
 app.use(express.static(__dirname + "/public"));
 app.use("/api", api);
 
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "public/main.html")));
+const indexTemplate = fs.readFileSync(path.join(__dirname, "public/main.html"), "utf-8");
+let killers;
+async function getKillers() {
+    killers = Array.from(await db.get("killers"));
+}
+getKillers();
+console.log(killers);
+
+app.get("/", (req, res) => res.send(indexTemplate.replaceAll("{amount}", killers.length)));
 app.get("/rawstats", (req, res) => res.sendFile(path.join(__dirname, "public/rawstats.html")));
 app.get("/addgame", (req, res) => res.sendFile(path.join(__dirname, "public/addgame.html")));
 app.get("/cperks", (req, res) => res.sendFile(path.join(__dirname, "public/commonperks.html")));
