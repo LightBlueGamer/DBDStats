@@ -19,7 +19,7 @@ async function getKillers() {
 getKillers();
 console.log(killers);
 
-app.get("/", (req, res) => res.send(indexTemplate.replaceAll("{amount}", killers.length)));
+app.get("/", (req, res) => res.send(indexTemplate.replace("{amount}", killers.length)));
 app.get("/rawstats", (req, res) => res.sendFile(path.join(__dirname, "public/rawstats.html")));
 app.get("/addgame", (req, res) => res.sendFile(path.join(__dirname, "public/addgame.html")));
 app.get("/cperks", (req, res) => res.sendFile(path.join(__dirname, "public/commonperks.html")));
