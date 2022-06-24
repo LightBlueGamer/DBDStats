@@ -7,6 +7,8 @@ const path = require("path");
 
 const db = require("../../db/index");
 
+perks.sort().push("Empty");
+
 router.get("/killers", async (req, res) => {
     res.status(200).send(await db.get("killers"));
 });
