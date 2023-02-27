@@ -13,6 +13,7 @@ function setStats() {
     })
         .then((response) => response.text())
         .then((result) => {
+            const cMaps = [];
             const killers = [];
             const cPerks = [];
 
@@ -22,6 +23,7 @@ function setStats() {
 
             stats.forEach((stat) => {
                 killers.push(stat.killer);
+                cMaps.push(stat.map);
                 const perks = stat.perks;
                 perks.forEach((perkName) => {
                     cPerks.push(perkName);
@@ -46,8 +48,16 @@ function setStats() {
                 }
             });
 
+            let mapCount = {};
+            cMaps.forEach((map) => {
+                if (mapCount[map]) {
+                    mapCount[map] += 1;
+                } else {
+                    mapCount[map] = 1;
+                }
+            });
+
             const body = document.getElementById("stats");
-            console.log(stats);
             for (let i = 0; i < stats.length; i++) {
                 const stat = stats[i];
                 const row = document.createElement("tr");
@@ -57,6 +67,9 @@ function setStats() {
                 const killer = document.createElement("td");
                 killer.innerHTML = stat.killer;
                 row.appendChild(killer);
+                const map = document.createElement("td");
+                map.innerHTML = stat.map;
+                row.appendChild(map);
                 const perks = stat.perks;
                 perks.forEach((perkName) => {
                     const perk = document.createElement("td");
@@ -69,36 +82,14 @@ function setStats() {
                 body.appendChild(row);
             }
 
+            const map = mode(cMaps);
             const killer = mode(killers);
             const perk = mode(cPerks);
 
-            document.getElementById(
-                "commonKiller"
-            ).innerHTML = `${killer} (${killerCount[killer]})`;
+            document.getElementById("commonMap").innerHTML = `${map} (${mapCount[map]})`;
+            document.getElementById("commonKiller").innerHTML = `${killer} (${killerCount[killer]})`;
             document.getElementById("commonPerk").innerHTML = `${perk} (${perkCount[perk]})`;
         })
         .catch((error) => console.log("error", error));
 }
-
-let size = 0;
-
-function setSize() {
-    fetch("/api/v1/size", {
-        method: "GET",
-        redirect: "follow",
-    })
-        .then((response) => response.text())
-        .then((result) => {
-            document.getElementById(
-                "size"
-            ).innerHTML = `Collected data: ${result}kb/${playedGames} games`;
-        })
-        .catch((error) => console.log("error", error));
-}
-
-function showInfo() {
-    window.alert(`Size of collected data: ${size}kb`);
-}
-
 setStats();
-setSize();
