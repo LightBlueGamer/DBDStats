@@ -1,15 +1,21 @@
 const killers = require("../harddata/killers.json");
 const Josh = require("@joshdb/core");
-const provider = require("@joshdb/sqlite");
+const provider = require("@joshdb/mongo");
+
+require('dotenv').config();
 
 const db = new Josh({
-    name: "killerdata",
+    name: "stats",
     provider,
+    providerOptions: {
+        collection: 'stats',
+        url: `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.flnzudr.mongodb.net/defaultauthdb`
+    }
 });
 
-// (async () => {
+//(async () => {
 //     db.set("killers", killers);
-// })();
+//})();
 
 // (async () => {
 //     const stats = await db.get("killers");
