@@ -19,3 +19,12 @@ Tim added:
 Tim added:
 {"killer":"Doctor","perks":["BBQ","STBFL","Eruption","Deadlock"],"region":"EU"}
 
+Tim added:
+{"killer":"Knight","perks":["Overcharge","Eruption","Pain Resonance","Call of Brine"],"region":"EU","map":"The Game"}
+
+Tim added:
+{"killer":"Ghostface","perks":["BBQ","Nurses","Discordance","Nowhere to Hide"],"region":"EU","map":"Gas Heaven"}
+
+Tim added:
+{"killer":"Dredge","perks":["Pain Resonance","Brutal Strength","Lethal Pursuer","BBQ"],"region":"EU","map":"Eyrie of Crows"}
+
