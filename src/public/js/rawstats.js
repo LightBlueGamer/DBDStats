@@ -7,6 +7,7 @@ function setStats() {
         .then((result) => {
             const killers = [];
             const cPerks = [];
+            const maps = [];
 
             const stats = JSON.parse(result);
 
@@ -16,6 +17,8 @@ function setStats() {
                 perks.forEach((perkName) => {
                     cPerks.push(perkName);
                 });
+                console.log(stat.map);
+                maps.push(stat.map);
             });
 
             let killerCount = {};
@@ -107,6 +110,52 @@ function setStats() {
                 row.appendChild(perk);
                 row.appendChild(amount);
                 pBody.appendChild(row);
+            }
+
+            let mapCount = {};
+            maps.forEach((map) => {
+                if (mapCount[map]) {
+                    mapCount[map] += 1;
+                } else {
+                    mapCount[map] = 1;
+                }
+            });
+
+            const mapSortable = Object.fromEntries(
+                Object.entries(mapCount).sort(([, a], [, b]) => b - a)
+            );
+
+            const mBody = document.getElementById("mapBody");
+            let mapPlace = 1;
+            for (const mapName in mapSortable) {
+                console.log(mapName)
+
+                const row = document.createElement("tr");
+                const place = document.createElement("td");
+                const map = document.createElement("td");
+                const amount = document.createElement("td");
+
+                place.innerHTML = mapPlace;
+
+                const keys = Object.keys(mapSortable);
+                const nextIndex = keys.indexOf(mapName) + 1;
+
+                if (
+                    keys[nextIndex] !== undefined &&
+                    mapCount[mapName] !== mapCount[keys[nextIndex]]
+                )
+                    mapPlace++;
+
+                map.innerHTML = mapName;
+                amount.innerHTML = `${mapCount[mapName]}/${maps.length} | ${(
+                    (mapCount[mapName] / (maps.length)) *
+                    100
+                ).toFixed(2)}%`;
+
+                row.appendChild(place);
+                row.appendChild(map);
+                row.appendChild(amount);
+                mBody.appendChild(row);
             }
         })
         .catch((error) => console.log("error", error));

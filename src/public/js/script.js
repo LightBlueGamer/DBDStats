@@ -89,7 +89,6 @@ function setStats() {
 
             const map = mode(cMaps);
             const killer = mode(killers);
-            console.log(1);
             const average = kills.reduce((a,b) => a+b) / kills.length;
             const perk = mode(cPerks);
 
