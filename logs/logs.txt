@@ -19,3 +19,9 @@ Tim added:
 Tim added:
 {"killer":"Doctor","perks":["BBQ","STBFL","Eruption","Deadlock"],"region":"EU"}
 
+Tim added:
+{"killer":"Nemesis","perks":["STBFL","Discordance","Call of Brine","Overcharge"],"region":"EU","map":"Treatment Theatre","kills":"1"}
+
+Tim added:
+{"killer":"Michael","perks":["Brutal Strength","Enduring","Spirit Fury","Shadowborn"],"region":"EU","map":"Treatment Theatre","kills":"0"}
+

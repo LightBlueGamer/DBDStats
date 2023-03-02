@@ -9,6 +9,7 @@ router.post("/killer", (req, res) => {
     const pass = req.header("Authorization");
     const killer = req.header("Killer");
     const map = req.header("Map");
+    const kills = parseInt(req.header("Kills"));
     const p1 = req.header("Perk1");
     const p2 = req.header("Perk2");
     const p3 = req.header("Perk3");
@@ -20,6 +21,7 @@ router.post("/killer", (req, res) => {
         perks: [p1, p2, p3, p4],
         region,
         map,
+        kills,
     };
 
     if (!pass) return res.status(401).send(`No password were input`);
@@ -37,6 +39,7 @@ router.post("/ukiller", (req, res) => {
     const pass = req.header("Authorization");
     const killer = req.header("Killer");
     const map = req.header("Map");
+    const kills = parseInt(req.header("Kills"));
     const p1 = req.header("Perk1");
     const p2 = req.header("Perk2");
     const p3 = req.header("Perk3");
@@ -49,6 +52,7 @@ router.post("/ukiller", (req, res) => {
         perks: [p1, p2, p3, p4],
         region,
         map,
+        kills,
     };
 
     if (!pass) return res.status(401).send(`No password were input`);

@@ -1,13 +1,38 @@
 [
     {
-        "killer": "Doctor",
+        "killer": "Blight",
         "perks": [
-            "BBQ",
-            "STBFL",
+            "Nowhere to Hide",
             "Eruption",
-            "Deadlock"
+            "Overcharge",
+            "Call of Brine"
         ],
         "region": "eu",
-        "map": "Father Campbell's Chapel"
+        "map": "Gas Heaven",
+        "kills": 2
+    },
+    {
+        "killer": "Onryo",
+        "perks": [
+            "STBFL",
+            "Jolt",
+            "Merciless Storm",
+            "Tinkerer"
+        ],
+        "region": "eu",
+        "map": "Midwich",
+        "kills": 3
+    },
+    {
+        "killer": "Spirit",
+        "perks": [
+            "No Way Out",
+            "Sloppy Butcher",
+            "Pain Resonance",
+            "Terminus"
+        ],
+        "region": "eu",
+        "map": "Gas Heaven",
+        "kills": 4
     }
 ]

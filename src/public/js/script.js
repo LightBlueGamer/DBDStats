@@ -16,6 +16,7 @@ function setStats() {
             const cMaps = [];
             const killers = [];
             const cPerks = [];
+            const kills = [];
 
             const stats = JSON.parse(result);
 
@@ -24,6 +25,7 @@ function setStats() {
             stats.forEach((stat) => {
                 killers.push(stat.killer);
                 cMaps.push(stat.map);
+                kills.push(stat.kills);
                 const perks = stat.perks;
                 perks.forEach((perkName) => {
                     cPerks.push(perkName);
@@ -67,6 +69,9 @@ function setStats() {
                 const killer = document.createElement("td");
                 killer.innerHTML = stat.killer;
                 row.appendChild(killer);
+                const kills = document.createElement("td");
+                kills.innerHTML = stat.kills;
+                row.appendChild(kills);
                 const map = document.createElement("td");
                 map.innerHTML = stat.map;
                 row.appendChild(map);
@@ -84,10 +89,12 @@ function setStats() {
 
             const map = mode(cMaps);
             const killer = mode(killers);
+            const average = kills.reduce((a,b) => a+b) / kills.length;
             const perk = mode(cPerks);
 
             document.getElementById("commonMap").innerHTML = `${map} (${mapCount[map]})`;
             document.getElementById("commonKiller").innerHTML = `${killer} (${killerCount[killer]})`;
+            document.getElementById("commonKills").innerHTML = `${average}`;
             document.getElementById("commonPerk").innerHTML = `${perk} (${perkCount[perk]})`;
         })
         .catch((error) => console.log("error", error));

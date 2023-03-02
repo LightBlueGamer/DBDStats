@@ -71,6 +71,7 @@ function addgame() {
     const code = document.getElementById("password").value;
     const killer = document.getElementById("killers").value;
     const map = document.getElementById("map").value;
+    const kills = document.getElementById("kills").value;
     const perk1 = document.getElementById("perk1").value;
     const perk2 = document.getElementById("perk2").value;
     const perk3 = document.getElementById("perk3").value;
@@ -84,6 +85,7 @@ function addgame() {
     myHeaders.append("Authorization", code);
     myHeaders.append("Killer", killer);
     myHeaders.append("Map", map);
+    myHeaders.append("Kills", kills);
     myHeaders.append("Perk1", perk1);
     myHeaders.append("Perk2", perk2);
     myHeaders.append("Perk3", perk3);
@@ -113,6 +115,8 @@ function addgame() {
 function changestat() {
     const code = document.getElementById("password").value;
     const killer = document.getElementById("killers").value;
+    const map = document.getElementById("map").value;
+    const kills = document.getElementById("kills").value;
     const perk1 = document.getElementById("perk1").value;
     const perk2 = document.getElementById("perk2").value;
     const perk3 = document.getElementById("perk3").value;
@@ -123,6 +127,8 @@ function changestat() {
     const myHeaders = new Headers();
     myHeaders.append("Authorization", code);
     myHeaders.append("Killer", killer);
+    myHeaders.append("Map", map);
+    myHeaders.append("Kills", kills);
     myHeaders.append("Perk1", perk1);
     myHeaders.append("Perk2", perk2);
     myHeaders.append("Perk3", perk3);
