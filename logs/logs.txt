@@ -35,3 +35,21 @@ Tim added:
 {"killer":"Dredge","perks":["Pain Resonance","Brutal Strength","Lethal Pursuer","BBQ"],"region":"EU","map":"Eyrie of Crows"}
 >>>>>>> 7df3f5c47b6a2b710a84ebbf04a5ad0d72467461
 
+Tim added:
+{"killer":"Nurse","perks":["Nurses","Discordance","Thanatophobia","Unrelenting"],"region":"EU","map":"Raccon City Police Station West Wing","kills":0}
+
+Tim added:
+{"killer":"Michael","perks":["Infectious","Jolt","Dead Mans Switch","Monitor & Abuse"],"region":"EU","map":"Treatment Theatre","kills":4}
+
+Tim added:
+{"killer":"Plague","perks":["Discordance","No Way Out","Thanatophobia","Infectious"],"region":"EU","map":"Coal Tower","kills":0}
+
+Tim added:
+{"killer":"Demogorgon","perks":["Pain Resonance","STBFL","BBQ","Agitation"],"region":"EU","map":"Raccon City Police Station West Wing","kills":0}
+
+Tim added:
+{"killer":"Ghostface","perks":["Eruption","Play With Your Food","Thanatophobia","Call of Brine"],"region":"EU","map":"Groaning Storehouse","kills":1}
+
+Tim added:
+{"killer":"Pyramid Head","perks":["Tinkerer","Nowhere to Hide","I'm All Ears","Floods of Rage"],"region":"EU","map":"Ironworks of Misery","kills":2}
+
