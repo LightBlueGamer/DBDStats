@@ -95,7 +95,7 @@ function setStats() {
             document.getElementById("commonMap").innerHTML = `${map} (${mapCount[map]})`;
             document.getElementById("commonKiller").innerHTML = `${killer} (${killerCount[killer]})`;
             document.getElementById("commonKills").innerHTML = `${average}`;
-            document.getElementById("commonPerk").innerHTML = `${perk} (${perkCount[perk]})`;
+            document.getElementById("commonPerk").innerHTML = `${perk} (${(perkCount[perk]).toFixed(2)})`;
         })
         .catch((error) => console.log("error", error));
 }
