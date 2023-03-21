@@ -58,7 +58,7 @@ function setPerks() {
                 const tbody = document.createElement("tbody");
                 table.appendChild(tbody);
                 for (const perk in perkSortable) {
-                    if (perk === "Empty") continue;
+                    if (perk === "Empty" || perk === "Unknown") continue;
                     const prow = document.createElement("tr");
                     const p = document.createElement("td");
                     p.innerHTML = perk;

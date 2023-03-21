@@ -10,9 +10,13 @@ async function setPerks() {
         const perk = document.getElementById(`perk${i}`);
         perk.innerHTML = "";
         const option = document.createElement("option");
+        const option2 = document.createElement("option");
         option.value = "Empty";
+        option2.value = "Unknown";
         option.innerHTML = "Empty";
+        option2.innerHTML = "Unknown";
         perk.appendChild(option);
+        perk.appendChild(option2);
     }
 
 
@@ -77,7 +81,7 @@ function addgame() {
     const perk3 = document.getElementById("perk3").value;
     const perk4 = document.getElementById("perk4").value;
     if([perk1, perk2, perk3, perk4].some((perk, index, arr) => {
-        if(perk == "Empty") return false;
+        if(perk === "Empty" || perk === "Unknown") return false;
         return arr.indexOf(perk) != index;
     })) return window.alert("You can't have the same perk twice!");
     const region = document.getElementById("region").value;

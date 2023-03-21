@@ -82,7 +82,7 @@ function setStats() {
 
             let perkPlace = 1;
             for (const perkName in perkSortable) {
-                if (perkName === "Empty") continue;
+                if (perkName === "Empty" || perkName === "Unknown") continue;
 
                 const row = document.createElement("tr");
                 const place = document.createElement("td");
