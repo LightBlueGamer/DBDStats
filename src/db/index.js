@@ -22,7 +22,7 @@ const db = new Josh({
 
 //     for (let i = 0; i < stats.length; i++) {
 //         const obj = stats[i];
-//         obj.region = "Eu";
+//         obj.user = "Tim";
 //         await db.set(`killers.${i}`, obj);
 //     }
 // })();

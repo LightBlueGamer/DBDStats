@@ -16,12 +16,15 @@ router.post("/killer", (req, res) => {
     const p4 = req.header("Perk4");
     const region = req.header("Region");
 
+    const user = codes.find(x => x.code === pass).name;
+
     const obj = {
         killer,
         perks: [p1, p2, p3, p4],
         region,
         map,
         kills,
+        user
     };
 
     if (!pass) return res.status(401).send(`No password were input`);
@@ -47,16 +50,19 @@ router.post("/ukiller", (req, res) => {
     const pos = req.header("Pos");
     const region = req.header("Region");
 
+    const user = codes.find(x => x.code === pass).name;
+
     const obj = {
         killer,
         perks: [p1, p2, p3, p4],
         region,
         map,
         kills,
+        user
     };
 
     if (!pass) return res.status(401).send(`No password were input`);
-    if (codes.find((x) => x.name === "Light")) {
+    if (codes.find((x) => x.name === "Tim")) {
         db.set(`killers.${pos}`, obj);
         res.status(200).send(obj);
         fs.appendFileSync(

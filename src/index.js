@@ -12,12 +12,11 @@ app.use(express.static(__dirname + "/public"));
 app.use("/api", api);
 
 const indexTemplate = fs.readFileSync(path.join(__dirname, "public/main.html"), "utf-8");
-let killers;
+
 //async function getKillers() {
-  //  killers = Array.from(await db.get("killers"));
+  //  const killers = Array.from(await db.get("killers"));
 //}
 //getKillers();
-console.log(killers);
 
 app.get("/", (req, res) => res.send(indexTemplate/*.replace("{amount}", killers.length)*/));
 app.get("/rawstats", (req, res) => res.sendFile(path.join(__dirname, "public/rawstats.html")));
