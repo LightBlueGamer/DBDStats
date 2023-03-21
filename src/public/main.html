@@ -9,11 +9,11 @@
     <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
     <meta content="https://embed.com/embedimage.png" property="og:image" />
     <meta content="#210a0a" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="./css/style.css?version=1">
-    <script src="js/script.js?version=2"></script>
+    <link rel="stylesheet" href="./css/style.css?version=3">
+    <script src="js/script.js?version=3"></script>
 </head>
 <body>
-    <table>
+    <table class="sticky">
         <tr class="overBar">
             <th>Most Common Map</th>
             <th>Most Common Killer</th>
@@ -26,7 +26,30 @@
             <td id="commonPerk">X</td>
             <td id="commonKills">X</td>
         </tr>
-    </table><br>
+    </table>
+    <label class="searchLabel" for="sort">Sort</label>
+    <select class="search" id="sort" onchange="searchTable()">
+        <option value="default">Default</option>
+        <option value="killsLowHigh">Kills: Low > High</option>
+        <option value="killsHighLow">Kills: High > Low</option>
+    </select>
+    <label class="searchLabel" for="searchKiller">Killer:</label>
+    <input class="search" id="searchKiller" onkeyup="searchTable()" type="text">
+    <label class="searchLabel" for="searchKills">Kills:</label>
+    <input class="search" id="searchKills" onkeyup="searchTable()" onchange="searchTable()" type="number" min="0" max="4">
+    <label class="searchLabel" for="searchMap">Map:</label>
+    <input class="search" id="searchMap" onkeyup="searchTable()" type="text">
+    <label class="searchLabel" for="searchPerk">Perk:</label>
+    <input class="search" id="searchPerk" onkeyup="searchTable()" type="text">
+    <label class="searchLabel" for="searchRegion">Region:</label>
+    <select class="search" id="searchRegion" onchange="searchTable()">
+        <option value="ALL">ALL</option>
+        <option value="EU">EU</option>
+        <option value="NAW">NAW</option>
+        <option value="NAE">NAE</option>
+        <option value="OCE">OCE</option>
+        <option value="ASIA">ASIA</option>
+    </select>
     <table>
         <tr>
             <th class="T R">#</th>

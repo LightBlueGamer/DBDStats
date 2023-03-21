@@ -6,7 +6,7 @@ function mode(arr) {
 
 let games = 0;
 
-function setStats() {
+function setStats(filterKiller, filterKills, filterMap, filterPerk, filterRegion, sort) {
     fetch("/api/v1/killers", {
         method: "GET",
         redirect: "follow",
@@ -18,9 +18,21 @@ function setStats() {
             const cPerks = [];
             const kills = [];
 
-            const stats = JSON.parse(result);
+            let stats = JSON.parse(result);
 
             games = stats.length;
+
+            if(filterKiller?.length > 0) stats = stats.filter(stat => stat.killer.toUpperCase().indexOf(filterKiller.toUpperCase()) > -1)
+            if(filterKills?.length > 0 && parseInt(filterKills) >= 0 && parseInt(filterKills) <= 4) stats = stats.filter(stat => stat.kills.toString().toUpperCase().indexOf(filterKills.toString().toUpperCase()) > -1)
+            if(filterMap?.length > 0) stats = stats.filter(stat => stat.map.toUpperCase().indexOf(filterMap.toUpperCase()) > -1)
+            if(filterPerk?.length > 0) stats = stats.filter(stat => stat.perks.some(perkName => perkName.toUpperCase().indexOf(filterPerk.toUpperCase()) > -1))
+            if(filterRegion?.length > 0 && filterRegion !== "ALL") stats = stats.filter(stat => stat.region.toUpperCase().indexOf(filterRegion?.toUpperCase()) > -1)
+            if(sort?.length > 0) {
+                if(sort === "killsHighLow") stats = stats.sort((a, b) => b.kills - a.kills);
+                else if(sort === "killsLowHigh") stats = stats.sort((a, b) => a.kills - b.kills);
+            }
+
+            document.getElementById("stats").innerHTML = "";
 
             stats.forEach((stat) => {
                 killers.push(stat.killer);
@@ -79,6 +91,7 @@ function setStats() {
                 perks.forEach((perkName) => {
                     const perk = document.createElement("td");
                     perk.innerHTML = perkName;
+                    if(['Empty', 'Unknown'].includes(perkName)) perk.style.fontSize = 0;
                     row.appendChild(perk);
                 });
                 const region = document.createElement("td");
@@ -89,7 +102,7 @@ function setStats() {
 
             const map = mode(cMaps);
             const killer = mode(killers);
-            const average = kills.reduce((a,b) => a+b) / kills.length;
+            const average = kills?.reduce((a,b) => a+b) / kills.length;
             const perk = mode(cPerks);
 
             document.getElementById("commonMap").innerHTML = `${map} (${mapCount[map]})`;
@@ -100,3 +113,18 @@ function setStats() {
         .catch((error) => console.log("error", error));
 }
 setStats();
+
+function searchTable() {
+    const inputKiller = document.getElementById("searchKiller");
+    const toFindKiller = inputKiller.value.toUpperCase();
+    const inputKills = document.getElementById("searchKills");
+    const toFindKills = inputKills.value.toString().toUpperCase();
+    const inputMap = document.getElementById("searchMap");
+    const toFindMap = inputMap.value.toUpperCase();
+    const inputPerk = document.getElementById("searchPerk");
+    const toFindPerk = inputPerk.value.toUpperCase();
+    const inputRegion = document.getElementById("searchRegion");
+    const toFindRegion = inputRegion.value.toUpperCase();
+    const sort = document.getElementById("sort").value;
+    setStats(toFindKiller, toFindKills, toFindMap, toFindPerk, toFindRegion, sort);
+}

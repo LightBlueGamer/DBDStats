@@ -8,6 +8,24 @@ table {
     width: 100%;
 }
 
+table.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+input.search {
+    background-color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+label.searchLabel {
+    color: white;
+}
+
 td,
 th {
     text-align: center;

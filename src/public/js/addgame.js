@@ -84,6 +84,7 @@ function addgame() {
         if(perk === "Empty" || perk === "Unknown") return false;
         return arr.indexOf(perk) != index;
     })) return window.alert("You can't have the same perk twice!");
+    if(kills > 4 || kills < 0) return window.alert("You can't get more than 4 kills or less than 0!");
     const region = document.getElementById("region").value;
     const myHeaders = new Headers();
     myHeaders.append("Authorization", code);
@@ -127,6 +128,12 @@ function changestat() {
     const perk4 = document.getElementById("perk4").value;
     const pos = document.getElementById("pos").value;
     const region = document.getElementById("region").value;
+
+    if([perk1, perk2, perk3, perk4].some((perk, index, arr) => {
+        if(perk === "Empty" || perk === "Unknown") return false;
+        return arr.indexOf(perk) != index;
+    })) return window.alert("You can't have the same perk twice!");
+    if(kills > 4 || kills < 0) return window.alert("You can't get more than 4 kills or less than 0!");
 
     const myHeaders = new Headers();
     myHeaders.append("Authorization", code);
