@@ -85,7 +85,7 @@ function setStats(filterKiller, filterKills, filterMap, filterPerk, filterRegion
                 kills.innerHTML = stat.kills;
                 row.appendChild(kills);
                 const map = document.createElement("td");
-                if(stat.offering) map.innerHTML = `${stat.map} (Offering)`;
+                if(stat.offering === true) map.innerHTML = `${stat.map} (Offering)`;
                 else map.innerHTML = stat.map;
                 row.appendChild(map);
                 const perks = stat.perks;
