@@ -73,7 +73,8 @@ function setStats() {
                 kills.innerHTML = stat.kills;
                 row.appendChild(kills);
                 const map = document.createElement("td");
-                map.innerHTML = stat.map;
+                if(stat.offering) map.innerHTML = `${stat.map} (Offering)`;
+                else map.innerHTML = stat.map;
                 row.appendChild(map);
                 const perks = stat.perks;
                 perks.forEach((perkName) => {

@@ -53,3 +53,12 @@ Tim added:
 Tim added:
 {"killer":"Pyramid Head","perks":["Tinkerer","Nowhere to Hide","I'm All Ears","Floods of Rage"],"region":"EU","map":"Ironworks of Misery","kills":2}
 
+Tim added:
+{"killer":"Nurse","perks":["Empty","Empty","Empty","Empty"],"region":"EU","map":"Blood Lodge","kills":4,"user":"Tim"}
+
+Tim added:
+{"killer":"Artist","perks":["Empty","Empty","Empty","Empty"],"region":"EU","map":"Azarov's Resting Place","kills":0,"user":"Tim","offering":"true"}
+
+Tim added:
+{"killer":"Artist","perks":["Empty","Empty","Empty","Empty"],"region":"EU","map":"Azarov's Resting Place","kills":0,"user":"Tim","offering":"true"}
+

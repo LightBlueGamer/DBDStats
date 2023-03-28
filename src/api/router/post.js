@@ -15,6 +15,7 @@ router.post("/killer", (req, res) => {
     const p3 = req.header("Perk3");
     const p4 = req.header("Perk4");
     const region = req.header("Region");
+    const offering = req.header("Offering")
 
     const user = codes.find(x => x.code === pass).name;
 
@@ -24,7 +25,8 @@ router.post("/killer", (req, res) => {
         region,
         map,
         kills,
-        user
+        user,
+        offering
     };
 
     if (!pass) return res.status(401).send(`No password were input`);
@@ -49,6 +51,7 @@ router.post("/ukiller", (req, res) => {
     const p4 = req.header("Perk4");
     const pos = req.header("Pos");
     const region = req.header("Region");
+    const offering = req.header("Offering")
 
     const user = codes.find(x => x.code === pass).name;
 
@@ -58,7 +61,8 @@ router.post("/ukiller", (req, res) => {
         region,
         map,
         kills,
-        user
+        user,
+        offering
     };
 
     if (!pass) return res.status(401).send(`No password were input`);

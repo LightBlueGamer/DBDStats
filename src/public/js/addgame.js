@@ -1,6 +1,8 @@
 async function setPerks() {
     if(window.localStorage.getItem("code")) document.getElementById("password").value = window.localStorage.getItem("code");
 
+    const k = document.getElementById("killers");
+
     const p1 = document.getElementById("perk1");
     const p2 = document.getElementById("perk2");
     const p3 = document.getElementById("perk3");
@@ -19,11 +21,26 @@ async function setPerks() {
         perk.appendChild(option2);
     }
 
+    const killerResponse = await fetch("/api/v1/killerList", {
+        method: "GET",
+        redirect: "follow",
+    });
+
+    const killerResult = await killerResponse.text();
+    const killers = Array.from(await JSON.parse(killerResult)).sort();
+
+    for(const killer of killers) {
+        const option = document.createElement("option");
+        option.value = killer;
+        option.innerHTML = killer;
+        k.appendChild(option);
+    };
 
     const response = await fetch("/api/v1/perks", {
         method: "GET",
         redirect: "follow",
-    })
+    });
+
     const result = await response.text();
     const perks = await JSON.parse(result);
     
@@ -75,6 +92,7 @@ function addgame() {
     const code = document.getElementById("password").value;
     const killer = document.getElementById("killers").value;
     const map = document.getElementById("map").value;
+    const offering = document.getElementById("offering").checked;
     const kills = document.getElementById("kills").value;
     const perk1 = document.getElementById("perk1").value;
     const perk2 = document.getElementById("perk2").value;
@@ -95,6 +113,7 @@ function addgame() {
     myHeaders.append("Perk3", perk3);
     myHeaders.append("Perk4", perk4);
     myHeaders.append("Region", region);
+    myHeaders.append("Offering", offering)
 
     const requestOptions = {
         method: "POST",
@@ -120,6 +139,7 @@ function changestat() {
     const code = document.getElementById("password").value;
     const killer = document.getElementById("killers").value;
     const map = document.getElementById("map").value;
+    const offering = document.getElementById("offering").checked;
     const kills = document.getElementById("kills").value;
     const perk1 = document.getElementById("perk1").value;
     const perk2 = document.getElementById("perk2").value;
@@ -139,6 +159,7 @@ function changestat() {
     myHeaders.append("Perk4", perk4);
     myHeaders.append("Pos", pos - 1);
     myHeaders.append("Region", region);
+    myHeaders.append("Offering", offering)
 
     const requestOptions = {
         method: "POST",
@@ -155,6 +176,51 @@ function changestat() {
         })
         .then((result) => {
             if (result !== undefined) window.alert("Successfully updated killer stats!");
+        })
+        .catch((error) => console.log("error", error));
+}
+
+function deleteGame() {
+    const code = document.getElementById("password").value;
+    const killer = document.getElementById("killers").value;
+    const map = document.getElementById("map").value;
+    const offering = document.getElementById("offering").checked;
+    const kills = document.getElementById("kills").value;
+    const perk1 = document.getElementById("perk1").value;
+    const perk2 = document.getElementById("perk2").value;
+    const perk3 = document.getElementById("perk3").value;
+    const perk4 = document.getElementById("perk4").value;
+    const pos = document.getElementById("pos").value;
+    const region = document.getElementById("region").value;
+
+    const myHeaders = new Headers();
+    myHeaders.append("Authorization", code);
+    myHeaders.append("Killer", killer);
+    myHeaders.append("Map", map);
+    myHeaders.append("Kills", kills);
+    myHeaders.append("Perk1", perk1);
+    myHeaders.append("Perk2", perk2);
+    myHeaders.append("Perk3", perk3);
+    myHeaders.append("Perk4", perk4);
+    myHeaders.append("Pos", pos - 1);
+    myHeaders.append("Region", region);
+    myHeaders.append("Offering", offering)
+
+    const requestOptions = {
+        method: "DELETE",
+        headers: myHeaders,
+        redirect: "follow",
+    };
+
+    fetch("/api/v1/delete", requestOptions)
+        .then((response) => {
+            if (response.status != 200) {
+                console.log(response);
+                return window.alert("Error, your code might be wrong!");
+            } else return response.text();
+        })
+        .then((result) => {
+            if (result !== undefined) window.alert("Successfully deleted killer stat!");
         })
         .catch((error) => console.log("error", error));
 }

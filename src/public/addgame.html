@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,79 +8,106 @@
     <link rel="stylesheet" href="./css/addgame.css?version=1">
     <script src="js/addgame.js?version=2" defer></script>
 </head>
-<body>
-    <label for="killers">Choose a killer:</label>
-    <select id="killers" name="killers">
-        <option value="Trapper">Trapper</option>
-        <option value="Wraith">Wraith</option>
-        <option value="Billy">Billy</option>
-        <option value="Nurse">Nurse</option>
-        <option value="Huntress">Huntress</option>
-        <option value="Michael">Michael</option>
-        <option value="Hag">Hag</option>
-        <option value="Doctor">Doctor</option>
-        <option value="Bubba">Bubba</option>
-        <option value="Freddy">Freddy</option>
-        <option value="Pig">Pig</option>
-        <option value="Clown">Clown</option>
-        <option value="Spirit">Spirit</option>
-        <option value="Legion">Legion</option>
-        <option value="Plague">Plague</option>
-        <option value="Ghostface">Ghostface</option>
-        <option value="Demogorgon">Demogorgon</option>
-        <option value="Oni">Oni</option>
-        <option value="Deathslinger">Deathslinger</option>
-        <option value="Pyramid Head">Pyramid Head</option>
-        <option value="Blight">Blight</option>
-        <option value="Twins">Twins</option>
-        <option value="Trickster">Trickster</option>
-        <option value="Nemesis">Nemesis</option>
-        <option value="Pinhead">Pinhead</option>
-        <option value="Artist">Artist</option>
-        <option value="Onryo">Onryo</option>
-        <option value="Dredge">Dredge</option>
-        <option value="Wesker">Wesker</option>
-        <option value="Knight">Knight</option>
-        <option value="Skull Merchant">Skull Merchant</option>
-    </select><br><br>
-    <label for="map">Map:</label>
-    <select id="map" name="map">
-    </select><br><br>
-    <label for="kills">Kills:</label>
-    <input min="0" max="4" type="number" id="kills" name="kills"></select>
-    </select><br><br>
-    <label for="perk1">Perk 1:</label>
-    <select id="perk1" name="perk1">
-    </select><br><br>
-    <label for="perk2">Perk 2:</label>
-    <select id="perk2" name="perk2">
-    </select><br><br>
-    <label for="perk3">Perk 3:</label>
-    <select id="perk3" name="perk3">
-    </select><br><br>
-    <label for="perk4">Perk 4:</label>
-    <select id="perk4" name="perk4">
-    </select><br><br>
-    <label for="region">Region:</label>
-    <select id="region" name="region">
-        <option value="EU">Eu</option>
-        <option value="NAW">NaW</option>
-        <option value="NAE">NaE</option>
-        <option value="OCE">Oce</option>
-        <option value="ASIA">Asia</option>
-    </select><br><br>
 
-    <input type="text" id="password" value="Personal Code">
-    <button id="addgame" onclick="addgame()">Add Game</button><br>
-    <input type="number" id="pos" value="">
-    <button id="changeStat" onclick="changestat()">Change Killer Stats</button><br>
-    <p>Reminder: Do not input your own killer games!</p>
+<body>
+    <table>
+        <tr>
+            <td><label for="killers">Killer: </label></td>
+            <td>
+                <select id="killers" name="killers">
+                    <!-- <option value="Trapper">Trapper</option>
+                    <option value="Wraith">Wraith</option>
+                    <option value="Billy">Billy</option>
+                    <option value="Nurse">Nurse</option>
+                    <option value="Huntress">Huntress</option>
+                    <option value="Michael">Michael</option>
+                    <option value="Hag">Hag</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Bubba">Bubba</option>
+                    <option value="Freddy">Freddy</option>
+                    <option value="Pig">Pig</option>
+                    <option value="Clown">Clown</option>
+                    <option value="Spirit">Spirit</option>
+                    <option value="Legion">Legion</option>
+                    <option value="Plague">Plague</option>
+                    <option value="Ghostface">Ghostface</option>
+                    <option value="Demogorgon">Demogorgon</option>
+                    <option value="Oni">Oni</option>
+                    <option value="Deathslinger">Deathslinger</option>
+                    <option value="Pyramid Head">Pyramid Head</option>
+                    <option value="Blight">Blight</option>
+                    <option value="Twins">Twins</option>
+                    <option value="Trickster">Trickster</option>
+                    <option value="Nemesis">Nemesis</option>
+                    <option value="Pinhead">Pinhead</option>
+                    <option value="Artist">Artist</option>
+                    <option value="Onryo">Onryo</option>
+                    <option value="Dredge">Dredge</option>
+                    <option value="Wesker">Wesker</option>
+                    <option value="Knight">Knight</option>
+                    <option value="Skull Merchant">Skull Merchant</option> -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="kills">Kills: </label></td>
+            <td><input min="0" max="4" value="0" type="number" id="kills" name="kills"></select></td>
+        </tr>
+        <tr>
+            <td><label for="map">Map: </label></td>
+            <td><select id="map" name="map"></select></td>
+            <td><label for="offering">Offering: </label></td>
+            <td><input type="checkbox" id="offering" name="offering"></input></td>
+        </tr>
+        <tr>
+            <td><label for="region">Region: </label></td>
+            <td><select id="region" name="region">
+                    <option value="EU">Eu</option>
+                    <option value="NAW">NaW</option>
+                    <option value="NAE">NaE</option>
+                    <option value="OCE">Oce</option>
+                    <option value="ASIA">Asia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="perk1">Perk 1: </label></td>
+            <td><select id="perk1" name="perk1"></select></td>
+        </tr>
+        <tr>
+            <td><label for="perk2">Perk 2: </label></td>
+            <td><select id="perk2" name="perk2"></select></td>
+        </tr>
+        <tr>
+            <td><label for="perk3">Perk 3: </label></td>
+            <td><select id="perk3" name="perk3"></select></td>
+        </tr>
+        <tr>
+            <td><label for="perk4">Perk 4: </label></td>
+            <td><select id="perk4" name="perk4"></select></td>
+        </tr>
+    </table>
     <br>
+    <table>
+        <tr>
+            <td><label for="password">Password: </label></td>
+            <td><input type="text" id="password" value="Personal Code"></td>
+            <td><button id="addgame" onclick="addgame()">Add Game</button><br></td>
+        </tr>
+        <tr>
+            <td><label for="pos">Game #: </label></td>
+            <td><input type="number" id="pos" value=""></td>
+            <td><button id="changeStat" onclick="changestat()">Change Killer Stats</button></td>
+            <td><button id="deleteGame" onclick="deleteGame()">Delete Game</button><br></td>
+        </tr>
+    </table>
 
     <div class="footer" id="navButtons">
         <button onclick="location.href='https://dbdstats.litecraft.org/rawstats'" type="button">Raw Statistics</button>
-        <button onclick="location.href='https://dbdstats.litecraft.org/cperks'" type="button">Common Killer Perks</button>
+        <button onclick="location.href='https://dbdstats.litecraft.org/cperks'" type="button">Common Killer
+            Perks</button>
         <button onclick="location.href='https://dbdstats.litecraft.org'" type="button">Main Page</button>
     </div>
 </body>
+
 </html>

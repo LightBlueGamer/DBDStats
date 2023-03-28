@@ -2,9 +2,8 @@ const express = require("express");
 const router = express.Router();
 const perks = require("../../harddata/perks.json");
 const maps = require("../../harddata/maps.json");
-const killers = require("../../harddata/killers.json");
-const fs = require("fs");
-const path = require("path");
+const axios = require('axios');
+const cheerio = require('cheerio');
 
 const db = require("../../db/index");
 
@@ -20,6 +19,23 @@ router.get("/perks", (req, res) => {
 
 router.get("/maps", (req, res) => {
     res.status(200).send(maps);
+});
+
+router.get("/killerList", (req, res) => {
+    axios.get('https://deadbydaylight.fandom.com/wiki/Killers')
+        .then(function (response) {
+            const $ = cheerio.load(response.data);
+            const killers = [];
+
+            $('div > div > div.center > div.floatnone').each((i, e) => {
+                killers.push($(e).find('a')[0].attributes[1].value.replace('The ', ''));
+            });
+
+            res.status(200).send(killers);
+        })
+        .catch(function (error) {
+            return console.error(error);
+        });
 });
 
 module.exports = router;
