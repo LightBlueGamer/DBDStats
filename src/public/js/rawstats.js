@@ -101,8 +101,8 @@ function setStats() {
                     perkPlace++;
 
                 perk.innerHTML = perkName;
-                amount.innerHTML = `${perkCount[perkName]}/${cPerks.length / 4} | ${(
-                    (perkCount[perkName] / (cPerks.length / 4)) *
+                amount.innerHTML = `${perkCount[perkName]}/${cPerks.length} | ${(
+                    (perkCount[perkName] / (cPerks.length)) *
                     100
                 ).toFixed(2)}%`;
 
