@@ -34,8 +34,26 @@ router.get("/perks", (req, res) => {
 
 
 router.get("/maps", (req, res) => {
-    res.status(200).send(maps);
+    axios.get("https://deadbydaylight.fandom.com/wiki/Realms")
+        .then(response => {
+            const html = response.data;
+            const $ = cheerio.load(html);
+            const maps = [];
+            
+            $('table tbody tr td center').each(function() {
+                const name = $(this).find('a').text().trim();
+                if (name) {
+                    maps.push(name);
+                }
+            });
+
+            maps.sort();
+
+            res.status(200).send(maps);
+        })
+        .catch(console.error);
 });
+
 
 router.get("/killerList", (req, res) => {
     axios.get('https://deadbydaylight.fandom.com/wiki/Killers')
