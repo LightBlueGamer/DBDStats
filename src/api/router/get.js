@@ -14,8 +14,24 @@ router.get("/killers", async (req, res) => {
 });
 
 router.get("/perks", (req, res) => {
-    res.status(200).send(perks);
+    axios.get("https://deadbydaylight.fandom.com/wiki/Killer_Perks")
+        .then(response => {
+            const html = response.data;
+            const $ = cheerio.load(html);
+            const perkNames = [];
+            
+            $('table tbody tr').each(function() {
+                const name = $(this).find('th:nth-child(2) a').text().trim();
+                if (name) {
+                    perkNames.push(name);
+                }
+            });
+
+            res.status(200).send(perkNames);
+        })
+        .catch(console.error);
 });
+
 
 router.get("/maps", (req, res) => {
     res.status(200).send(maps);
