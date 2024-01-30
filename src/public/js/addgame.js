@@ -124,7 +124,7 @@ function addgame() {
 
     fetch("/api/v1/killer", requestOptions)
         .then((response) => {
-            if (response.status != 200) return window.alert("Error, your code might be wrong!");
+            if (response.status != 200) return window.alert(response.text());
             else {
                 window.localStorage.setItem("code", code);
                 return response.text();
