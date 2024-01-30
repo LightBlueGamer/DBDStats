@@ -13,9 +13,9 @@ const db = new Josh({
     }
 });
 
-(async () => {
-     db.set("killers", killers);
-})();
+//(async () => {
+//     db.set("killers", killers);
+//})();
 
 // (async () => {
 //     const stats = await db.get("killers");
