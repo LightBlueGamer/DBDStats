@@ -54,6 +54,7 @@ app.get('/', async (req, res) => {
 app.get("/rawstats", (req, res) => res.sendFile(path.join(__dirname, "public/rawstats.html")));
 app.get("/addgame", (req, res) => res.sendFile(path.join(__dirname, "public/addgame.html")));
 app.get("/cperks", (req, res) => res.sendFile(path.join(__dirname, "public/commonperks.html")));
+app.get("/stats", (req, res) => res.sendFile(path.join(__dirname, "public/stats.html")));
 
 require("dotenv").config();
 

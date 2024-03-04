@@ -17,7 +17,6 @@ function setStats() {
                 perks.forEach((perkName) => {
                     cPerks.push(perkName);
                 });
-                console.log(stat.map);
                 maps.push(stat.map);
             });
 

@@ -31,8 +31,8 @@ async function setPerks() {
 
     for(const killer of killers) {
         const option = document.createElement("option");
-        option.value = killer;
-        option.innerHTML = killer;
+        option.value = killer.replace("ō", "o");
+        option.innerHTML = killer.replace("ō", "o");
         k.appendChild(option);
     };
 
